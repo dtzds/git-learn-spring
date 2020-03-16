@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--有参构造创建-->
+    <bean name="user" class="com.dtz.bean.User">
+        <constructor-arg index="0" name="name" value="dtz" type="java.lang.String"/>
+        <constructor-arg index="1" name="age" value="20"/>
+    </bean>
+
+    <!--set注入-->
+    <bean name="user1" class="com.dtz.bean.User">
+        <property name="name" value="tz"/>
+        <property name="age"  value="10"/>
+    </bean>
+</beans>

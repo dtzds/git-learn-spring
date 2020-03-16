@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <!-- 别名 -->
+    <typeAliases>
+        <package name="com.dtz.bean"/>
+    </typeAliases>
+
+    <mappers>
+        <!-- 使用package节点，即com.dtz.Mapper包下的所有文件都可以映射到，开发中推荐使用，有多个不用重复写
+				要求：xml文件和接口文件的名称要一致，且在同一目录下
+		 -->
+        <package name="com.dtz.mapper"/>
+    </mappers>
+</configuration>
